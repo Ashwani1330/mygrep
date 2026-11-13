@@ -1,6 +1,6 @@
 HELLO
 THIS IS A TEST FILE
-ERROR
+ERROR is a file
 🤡
 bye
 !!

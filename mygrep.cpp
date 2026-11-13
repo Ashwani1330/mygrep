@@ -4,6 +4,8 @@
 
 using namespace std;
 
+bool contains(const string &text, const string &pattern);
+
 int main(int argc, char* argv[])
 {
     if (argc != 3) {
@@ -20,8 +22,11 @@ int main(int argc, char* argv[])
     }
 
     string line;
+    string pattern(argv[1]);
     while (getline(file, line)) {
-        cout << line << "\n";
+        if (contains(line, pattern)) {
+            cout << line << "\n";
+        }
     }
 
     return 0;
